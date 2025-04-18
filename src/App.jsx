@@ -5,95 +5,104 @@ function App() {
   return (
     <>
       <div className="oswald-font container ">
-
         {/*About */}
 
-        <h1>PFO 01 - Matias Parentti</h1>
+        <header>
+          <h1>PFO 01 - Matias Parentti</h1>
+        </header>
 
-        <h2>About</h2>
+        <main>
+          <section>
+            <h2>About</h2>
 
-        <div>
-          <img
-            className="fotoPerfil"
-            src={fotoPerfil}
-            alt="fotoPerfil"
-            width={100}
-            height={100}
-          />
-        </div>
+            <figure>
+              <img
+                className="fotoPerfil"
+                src={fotoPerfil}
+                alt="fotoPerfil"
+                width={100}
+                height={100}
+              />
+            </figure>
 
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
 
-        <div>
-          <a>more</a>
-        </div>
+            <p>
+              <a>more</a>
+            </p>
+          </section>
 
-       
+          <section>
+            {/*Tabla */}
 
+            <h2>Skills</h2>
 
+            <div className="tableContainer">
+              <table id="tableSkills">
+                <thead>
+                  <tr>
+                    <th colSpan="3">Tecnologias - Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Javascript</td>
+                  </tr>
+                  <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                    <td>Angular</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        {/*Tabla */}
+          <section>
+            {/*Formulario */}
 
-        <h2>Skills</h2>
+            <h2>Contacto</h2>
 
-        <div className="tableContainer">
-          <table id="tableSkills">
-            <thead>
-              <tr>
-                <th colSpan="3">Tecnologias - Skills</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>CSS</td>
-              <td>Javascript</td>
-            </tr>
-            <tr>
-              <td>Node</td>
-              <td>React</td>
-              <td>Angular</td>
-            </tr>
-            </tbody>
-          
-          </table>
-        </div>
+            <form className="StyledForm" action="/">
+              <label htmlFor="fnombre">Nombre</label>
 
-        {/*Formulario */}
+              <input type="text" id="fnombre" name="fnombre" />
 
-        <h2>Contacto</h2>
+              <label htmlFor="fapellido">Apellido</label>
 
-        <form className="StyledForm" action="/">
-          <label htmlFor="fnombre">Nombre</label>
+              <input type="text" id="fapellido" name="fapellido" />
 
-          <input type="text" id="fnombre" name="fnombre"  />
+              <label htmlFor="fnumero">Numero</label>
 
-          <label htmlFor="fapellido">Apellido</label>
+              <input type="number" id="fnumero" name="fnumero" />
 
-          <input type="text" id="fapellido" name="fapellido"  />
+              <label htmlFor="lemail">Email</label>
 
-          <label htmlFor="fnumero">Numero</label>
+              <input type="email" id="lemail" name="lemail" />
 
-          <input type="number" id="fnumero" name="fnumero"  />
+              <button type="submit" value="Submit">
+                Enviar
+              </button>
+            </form>
+          </section>
+        </main>
 
-          <label htmlFor="lemail">Email</label>
-
-          <input type="email" id="lemail" name="lemail" />
-
-          <button type="submit" value="Submit">
-            Enviar
-          </button>
-        </form>
+        <footer>
+          <p>&copy; {new Date().getFullYear()} Matias Parentti</p>
+        </footer>
       </div>
     </>
   );
