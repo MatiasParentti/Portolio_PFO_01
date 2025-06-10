@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./NavBar.css";
 import logo from "../assets/brand.png";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
