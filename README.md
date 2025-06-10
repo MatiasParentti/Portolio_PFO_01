@@ -1,12 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Portfolio Matias Parentti
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+* Portfolio personal para la materia de Frontend de la tecnicatura en desarrollo de Software. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este proyecto cuenta con una seccion de About seguido de las secciones de Tecnologias aprendidas, Estudios cursados y certificados obtenidos. Por ultimo una seccion de Contacto. 
+
+
+* Proximo update: Seccion de Proyectos con enlaces a los repositorios y proyectos deployados.
+
+* A futuro hacer un CRUD para el backend y la bdd y poder gestionar todas las secciones del portfolio.
+
+
+
+<img src="./src/assets/portfolio.png" alt="porfolio>
+

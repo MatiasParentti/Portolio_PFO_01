@@ -1,0 +1,120 @@
+.cardContainerCertificado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.cardCertificado {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.certificadoImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.cardCertificado h3 {
+  font-size: 1.05rem;
+  color: #ff4c4c;
+  margin: 0.5rem 0;
+}
+
+.cardCertificado p {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.imgContainer{
+position: relative;
+}
+
+.zoomIcon{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #2b2b2b;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  z-index: 2; 
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  opacity: 70%;
+}
+
+.zoomIcon:hover {
+  transform: scale(1.2);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modalContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 1080px) {
+  .cardCertificado {
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cardCertificado {
+    width: 45%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cardCertificado {
+    width: 90%;
+  }
+  .cardCertificado h3 {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .cardCertificado {
+    padding: 0.75rem;
+  }
+  .cardCertificado h3 {
+    font-size: 0.9rem;
+  }
+  .cardCertificado p {
+    font-size: 0.85rem;
+  }
+}

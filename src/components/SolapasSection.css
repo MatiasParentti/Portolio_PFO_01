@@ -1,0 +1,103 @@
+.solapasContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+}
+
+.solapas {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.solapa {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+  color: #e0e0e0;
+}
+
+.solapa:hover {
+  background: #121212;
+}
+
+.solapa.active {
+  border-bottom: 3px solid #ff4c4c;
+  font-weight: bold;
+  color: #ff4c4c;
+}
+
+.content {
+  animation: fadeIn 0.3s ease-in;
+  background-color: #1e1e1e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 1080px) {
+  .solapaContent {
+    padding: 1.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .solapas {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .solapa {
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .solapaContent {
+    font-size: 0.95rem;
+    padding: 1.2rem;
+  }
+
+  .solapa.active {
+    border-bottom: 3px solid #ff4c4c;
+    background-color: #1e1e1e;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .solapa {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .solapaContent {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .solapa {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .solapaContent {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
+
+
+

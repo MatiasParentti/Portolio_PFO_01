@@ -22,13 +22,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-   flex-direction: column; 
-background-color: #121212;
+  flex-direction: column; 
+  background-color: #121212;
   color: #e0e0e0;
   font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
 }
+
+footer{
+  border-top: 2px solid #ccc;
+}
+
 
 .container {
   flex: 1; 
@@ -64,131 +69,14 @@ h1 {
   
 }
 
-/*Tabla*/
-
-.tableContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  overflow-x: auto;
-}
-
-#tableSkills{
-  border-collapse: collapse;
-  font-size: 1rem;
-  min-width: 600px;
-  width: 100%;
-  max-width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #2a2a2a;
-  color: #f1f1f1;
-}
-
-th{
-  background-color: #ff4c4c;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.2rem;
+.aboutContent{
+   max-width: 800px;
+   padding: 1rem;
 }
 
 
-td{
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #444;
-}
-
-thead, tr{
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
-}
-
-#tableSkills th,
-#tableSkills td {
-  padding: 12px 20px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/*Formulario*/
 
 
-.StyledForm{
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-}
-
-.StyledForm label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.StyledForm input {
-  max-width: 400px;
-  padding: 10px 14px;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  border-radius: 6px;
-  border: 1px solid #555;
-  background-color: #2b2b2b;
-  color: #ffffff;
-}
-
-input:focus {
-  outline: none;
-  border-color: #ff4c4c;
-  box-shadow: 0 0 0 2px #ff4c4c44;
-}
-
-
-.StyledForm button {
-  max-width: 400px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block;
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 10px;
-  background-color: #ff4c4c;
-  border: none;
-  border-radius: 6px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.StyledForm button:hover {
-  background-color: #e00000;
-}
-
-/*Responsive*/
-
-@media (max-width: 600px) {
-  #tableSkills {
-    font-size: 0.9rem;
-    min-width: unset;
-  }
-
-  #tableSkills th,
-  #tableSkills td {
-    padding: 8px 12px;
-  }
-}
 
 
 

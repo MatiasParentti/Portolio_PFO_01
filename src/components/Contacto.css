@@ -1,0 +1,60 @@
+.contactoForm{
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contactoForm input, textarea {
+  max-width: 400px;
+  padding: 10px 14px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff4c4c;
+  box-shadow: 0 0 0 2px #ff4c4c44;
+}
+
+
+
+
+.contactoForm button {
+  max-width: 400px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contactoForm button:hover {
+  background-color: #e00000;
+}
+
+
