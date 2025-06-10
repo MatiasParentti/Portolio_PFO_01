@@ -14,5 +14,6 @@ Este proyecto cuenta con una seccion de About seguido de las secciones de Tecnol
 
 
 
-<img src="./src/assets/portfolio.png" alt="porfolio>
+## Screenshots
 
+![App Screenshot](https://i.ibb.co/C55MpvMn/portfolio.png)
