@@ -1,28 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
 
 a {
-  color: #ff4c4c;
+  color: #e0e0e0;
   text-decoration: none;
   font-weight: bold;
- 
+
 }
+
 a:hover {
   text-decoration: underline;
 }
 
 
-p{
+p {
   line-height: 1.6;
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
 body {
- 
+
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  flex-direction: column; 
+  flex-direction: column;
   background-color: #121212;
   color: #e0e0e0;
   font-family: 'Oswald', sans-serif;
@@ -30,15 +34,21 @@ body {
   padding: 0;
 }
 
-footer{
+footer {
   border-top: 2px solid #ccc;
+  text-align: center;
+  padding: 1rem;
 }
 
+.socialIcon {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
 
 .container {
-  flex: 1; 
+  flex: 1;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -58,25 +68,90 @@ h1 {
 }
 
 
-.fotoPerfil{
-  width: 180px ;
-  height: auto ;
-  border-radius: 50%;
-  border: 2px solid #ff4c4c;
+
+
+section {
+  margin-top: 2rem;
+}
+
+
+
+.bannerContent {
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  padding: 1rem;
   margin-top: 1rem;
-  aspect-ratio: 1/1;
-
-  
+  height: 180px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent);
+  background-size: 55px 55px;
 }
 
-.aboutContent{
-   max-width: 800px;
-   padding: 1rem;
+.brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
+@media (max-width: 1080px) {
+  .banner {
+    height: 160px;
+    font-size: 2.5rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .banner {
+    height: 140px;
+    font-size: 2.2rem;
+  }
 
+  .brand {
+    max-width: 70%;
+  }
+}
 
+@media (max-width: 480px) {
+  .banner {
+    height: 120px;
+    font-size: 1.8rem;
+  }
 
+}
 
+@media (max-width: 375px) {
+  .banner {
+    height: 100px;
+    font-size: 1.5rem;
+  }
 
+}

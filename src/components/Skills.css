@@ -1,5 +1,4 @@
-
-.tableContainer{
+.tableContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,7 @@
   overflow-x: auto;
 }
 
-#tableSkills{
+#tableSkills {
   border-collapse: collapse;
   font-size: 1rem;
   min-width: 600px;
@@ -21,7 +20,7 @@
   color: #f1f1f1;
 }
 
-th{
+th {
   background-color: #ff4c4c;
   color: #ffffff;
   text-align: center;
@@ -30,13 +29,14 @@ th{
 }
 
 
-td{
+td {
   padding: 1rem;
   text-align: center;
   border-top: 1px solid #444;
 }
 
-thead, tr{
+thead,
+tr {
   color: #ffffff;
   text-align: left;
   font-weight: bold;

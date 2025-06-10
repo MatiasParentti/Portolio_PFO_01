@@ -8,7 +8,7 @@ const SolapasSection = () => {
   const [activeSolapa, setActiveSolapa] = useState("solapa1");
 
   return (
-    <div className="solapasContainer">
+    <div id="sobre-mi" className="solapasContainer">
       <div className="solapas">
         <button
           className={activeSolapa === "solapa1" ? "solapa active" : "solapa"}

@@ -16,4 +16,4 @@ Este proyecto cuenta con una seccion de About seguido de las secciones de Tecnol
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/C55MpvMn/portfolio.png)
+![App Screenshot](https://i.ibb.co/Gv4JXBRX/Captura-de-pantalla-2025-06-10-163403.png)

@@ -1,0 +1,77 @@
+.aboutSection {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.fotoPerfil {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.aboutText {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+  .aboutContent {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotoPerfil {
+    width: 150px;
+  }
+
+  .aboutText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fotoPerfil {
+    width: 130px;
+  }
+
+  .aboutText {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .fotoPerfil {
+    width: 120px;
+  }
+
+  .aboutText {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+}

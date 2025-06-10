@@ -1,39 +1,26 @@
 import "./App.css";
-import fotoPerfil from "./assets/fotoPerfil.jpg";
+import About from "./components/About";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import brand from "./assets/brand.png";
 import Contacto from "./components/Contacto";
+import Navbar from "./components/NavBar";
 import CarouselSections from "./components/SolapasSection";
 
 function App() {
   return (
     <>
       <div className="oswald-font container ">
-
         <header>
-          <h1>PFO 01 - Matias Parentti</h1>
+          <Navbar></Navbar>
+          <div className="bannerContent">
+            <div className="banner"></div>
+            <img className="brand" src={brand}  alt="brand" />
+          </div>
         </header>
 
         <main>
-          <section>
-            <h2>Sobre mi</h2>
-
-            <figure>
-              <img
-                className="fotoPerfil"
-                src={fotoPerfil}
-                alt="fotoPerfil"
-                width={100}
-                height={100}
-              />
-            </figure>
-            <div className="aboutContent">
-              <p>
-                I'm a self-taught Full-Stack Developer who works everyday to
-                become a better programmer. I've been able to learn a lot a
-                different technologies that have given me jobs and let me create
-                personal projects around my things of my interest
-              </p>
-            </div>
-          </section>
+          <About></About>
 
           <CarouselSections></CarouselSections>
 
@@ -42,6 +29,14 @@ function App() {
 
         <footer>
           <p>&copy; {new Date().getFullYear()} Matias Parentti</p>
+          <div className="">
+            <a href="https://github.com/MatiasParentti">
+              <FontAwesomeIcon className="socialIcon" icon={faGithub} />
+            </a>
+            <a href="https://www.linkedin.com/in/matias-parentti-7285a9226/">
+              <FontAwesomeIcon className="socialIcon" icon={faLinkedinIn} />
+            </a>
+          </div>
         </footer>
       </div>
     </>
