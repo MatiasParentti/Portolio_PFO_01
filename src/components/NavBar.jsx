@@ -26,7 +26,7 @@ const Navbar = () => {
             <a href="#sobre-mi">Sobre mí</a>
           </li>
           <li>
-            <a href="#contacto">Contacto</a>
+            <a href="/proyectos">Contacto</a>
           </li>
         </ul>
       </nav>
