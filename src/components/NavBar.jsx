@@ -20,13 +20,10 @@ const Navbar = () => {
       <nav className={`navBarLinks ${isOpen ? "showMenu" : ""}`}>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="#sobre-mi">Sobre mí</a>
-          </li>
-          <li>
-            <a href="/proyectos">Contacto</a>
+            <a href="/proyectos">Proyectos</a>
           </li>
         </ul>
       </nav>
